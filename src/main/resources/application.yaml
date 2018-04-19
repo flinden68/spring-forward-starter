@@ -1,0 +1,38 @@
+server:
+  port: 8085
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: ERROR
+
+info:
+  app:
+    name: Spring Forward Starter
+    version: 0.0.1-SNAPSHOT
+    description: Spring Forward Starter
+
+spring:
+  application:
+    name: Spring Forward Starter
+  profiles:
+      active: @activeProfile@
+
+management:
+  server:
+    servlet:
+      context-path: /actuator
+
+
+---
+spring:
+  profiles: dev
+
+
+---
+spring:
+  profiles: prod
+
+---
