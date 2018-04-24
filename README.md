@@ -35,7 +35,7 @@ mvn spring-boot:run -Dspring-boot.run.profiles=prod
 
 ##Push to CloudFoundry
 ```
-bluemix login -u userName -o orgName -s Demo
+bluemix login -u userName -o orgName -s spaceName
 bluemix app push spring-forward-starter
 ```
 
