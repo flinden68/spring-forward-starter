@@ -25,7 +25,7 @@ public class DemoController {
   @Autowired
   private DemoService demoService;
 
-  @ApiOperation(value = "Find Todo's by start and end date")
+  @ApiOperation(value = "Get a list demo objects", notes = "Additional notes for this endpoint")
   @ApiResponses(value = {
     @ApiResponse(code = 200, message = "Return list of demo objects"),
     @ApiResponse(code = 500, message = "Internal error, go check the logs")})
