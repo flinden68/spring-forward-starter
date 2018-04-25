@@ -1,5 +1,6 @@
 package nl.elstarit.spring.forward.starter.controller;
 
+import io.swagger.annotations.Api;
 import nl.elstarit.spring.forward.starter.model.Demo;
 import nl.elstarit.spring.forward.starter.service.DemoService;
 import io.swagger.annotations.ApiOperation;
@@ -20,6 +21,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @Slf4j
 @Controller
 @RequestMapping("/api")
+@Api(description = "Demo API", tags = {"Demo"})
 public class DemoController {
 
   @Autowired
