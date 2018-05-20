@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <title th:include=":: #pageTitle">Layout Generic Title</title>
     <link rel="icon" type="image/png" th:href="@{/images/icon.png}" />
+    <link rel="stylesheet" th:href="@{/css/demo.css}"/>
 </head>
 
 <body>
 <div th:fragment="layout">
+    <div th:include=":: #pageHeader"></div>
     <!-- include the page content in the layout fragement-->
     <div th:include=":: #pageContent"></div>
 </div>

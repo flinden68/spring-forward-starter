@@ -6,6 +6,10 @@
 </head>
 <body>
 <div th:replace="fragments/layout :: layout">
+    <div id="pageHeader">
+        <div th:replace="fragments/header :: header" />
+    </div>
+
     <div id="pageContent">
         <h1>Spring Forward Starter</h1>
         <div th:each="demo : ${demos}">
