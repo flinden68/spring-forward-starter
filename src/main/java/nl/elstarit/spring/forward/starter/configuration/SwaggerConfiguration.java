@@ -26,7 +26,7 @@ public class SwaggerConfiguration {
   private ApiInfo apiInfo() {
     return new ApiInfoBuilder()
       .title("Spring Forward Starter")
-      .description("To get a head start with spring boot")
+      .description("To get a head start with Spring boot and Thymeleaf")
       .license("Apache License Version 2.0")
       .version("2.0")
 
