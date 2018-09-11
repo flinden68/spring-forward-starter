@@ -20,6 +20,12 @@ spring:
   profiles:
       active: @activeProfile@
 
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: "/v2/api-docs"
+
 management:
   server:
     servlet:
