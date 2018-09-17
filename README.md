@@ -8,10 +8,11 @@
 ### Install Spring Boot CLI
 https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/htmlsingle/#getting-started-installing-the-cli
 
+### First install
 install the project with maven
 
 ### Run application
-spring boot:run
+mvn spring-boot:run
 
 
 ###Build runnable JAR filedocker p
