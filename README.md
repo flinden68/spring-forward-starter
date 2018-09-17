@@ -15,7 +15,7 @@ install the project with maven
 mvn spring-boot:run
 
 
-###Build runnable JAR filedocker p
+###Build runnable JAR file
 mvn package
 
 ###Build docker image file
