@@ -15,23 +15,23 @@ install the project with maven
 mvn spring-boot:run
 
 
-###Build runnable JAR file
+### Build runnable JAR file
 mvn package
 
-###Build docker image file
+### Build docker image file
 mvn package docker:build
 
-####Run in Docker
+#### Run in Docker
 docker run -p 8085:8085 -t elstarit/spring.forward.starter
 
-####Stop Docker container
+#### Stop Docker container
 docker ps
 
-####Will give you a container id and run
+#### Will give you a container id and run
 
 docker stop <containerid>
 
-###Run profiles
+### Run profiles
 ```
 mvn spring-boot:run -Pprod
 ```
@@ -40,14 +40,14 @@ the Spring boot 2.0 way
 mvn spring-boot:run -Dspring-boot.run.profiles=prod
 ```
 
-##Push to CloudFoundry
+## Push to CloudFoundry
 ```
 bluemix login -u userName -o orgName -s spaceName
 bluemix app push spring-forward-starter
 ```
 
-##Swagger
+## Swagger
 http://localhost:8085/swagger-ui.html
 
-##Demo page
+## Demo page
 http://localhost:8085/page/demo
