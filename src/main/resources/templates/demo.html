@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head th:replace="fragments/layout :: head">
     <title id="pageTitle">Spring Forward Starter</title>
 </head>
 <body>
-<div th:replace="fragments/layout :: layout">
-    <div id="pageHeader">
-        <div th:replace="fragments/header :: header" />
-    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div th:replace="fragments/layout :: layout">
+                <div id="pageHeader">
+                    <div th:replace="fragments/header :: header" />
+                </div>
 
-    <div id="pageContent">
-        <h1>Spring Forward Starter</h1>
-        <div th:each="demo : ${demos}">
-            <h3 th:text="${demo.name}"></h3>
-            <p th:text="${#temporals.format(demo.created, 'dd-MM-yyyy HH:mm')}"></p>
+                <div id="pageContent">
+                    <h1>Spring Forward Starter</h1>
+                    <div th:each="demo : ${demos}">
+                        <h3 th:text="${demo.name}"></h3>
+                        <p th:text="${#temporals.format(demo.created, 'dd-MM-yyyy HH:mm')}"></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

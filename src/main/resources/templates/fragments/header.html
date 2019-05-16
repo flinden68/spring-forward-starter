@@ -6,8 +6,8 @@
         </div>
         <br />
         <div id="language-switch" class="language-switch">
-            <a th:href="@{__${#httpServletRequest.requestURI}__?lang=en}" th:text="#{link.language}" th:if="__${#locale}__=='nl' or __${#locale}__=='nl_NL'"></a>
-            <a th:href="@{__${#httpServletRequest.requestURI}__?lang=nl}" th:text="#{link.language}" th:if="__${#locale}__=='en' or __${#locale}__=='en_EN'"></a>
+            <a th:href="@{/page/demo(lang=en)}" th:text="#{link.language}" th:if="__${#locale}__=='nl' or __${#locale}__=='nl_NL'"></a>
+            <a th:href="@{/page/demo(lang=nl)}" th:text="#{link.language}" th:if="__${#locale}__=='en' or __${#locale}__=='en_EN'"></a>
         </div>
     </header>
 </body>
