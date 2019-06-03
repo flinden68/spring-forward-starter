@@ -1,14 +1,21 @@
 <html lang="nl" xmlns:th="http://www.thymeleaf.org">
 <body>
     <header id="header" th:fragment="header">
-        <div id="language-panel" class="language-panel">
-            <span th:text="#{general.language}"></span><span th:text=" __${#locale}__"></span>
-        </div>
-        <br />
-        <div id="language-switch" class="language-switch">
-            <a th:href="@{/page/demo(lang=en)}" th:text="#{link.language}" th:if="__${#locale}__=='nl' or __${#locale}__=='nl_NL'"></a>
-            <a th:href="@{/page/demo(lang=nl)}" th:text="#{link.language}" th:if="__${#locale}__=='en' or __${#locale}__=='en_EN'"></a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--<span class="navbar-brand" th:text="#{general.language}"></span><span class="navbar-brand" th:text=" __${#locale}__"></span>-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/page/demo(lang=en)}" th:text="#{link.language}" th:if="__${#locale}__=='nl' or __${#locale}__=='nl_NL'"></a>
+                        <a class="nav-link" th:href="@{/page/demo(lang=nl)}" th:text="#{link.language}" th:if="__${#locale}__=='en' or __${#locale}__=='en_EN'"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-brand float-right">
+                    <span th:text="#{general.language}"></span>
+                    <span th:text=" __${#locale}__"></span>
+            </div>
+        </nav>
     </header>
 </body>
 </html>
