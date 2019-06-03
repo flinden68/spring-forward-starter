@@ -16,8 +16,14 @@
                 <div id="pageContent">
                     <h1>Spring Forward Starter</h1>
                     <div th:each="demo : ${demos}">
-                        <h3 th:text="${demo.name}"></h3>
-                        <p th:text="${#temporals.format(demo.created, 'dd-MM-yyyy HH:mm')}"></p>
+                        <div class="card" style="margin-bottom:10px">
+                            <div class="card-header" th:text="${demo.name}">
+                                Featured
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text" th:text="${#temporals.format(demo.created, 'dd-MM-yyyy HH:mm')}"></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
