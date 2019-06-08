@@ -6,7 +6,7 @@
 - in IDE or on command line run mvn clean install in directory of project
 
 ### Install Spring Boot CLI
-https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/htmlsingle/#getting-started-installing-the-cli
+https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/#getting-started-installing-the-cli
 
 ### First install
 install the project with maven
@@ -47,7 +47,7 @@ bluemix app push spring-forward-starter
 ```
 
 ## Swagger
-http://localhost:8085/swagger-ui.html
+http://localhost:8085/spring-starter/swagger-ui.html
 
 ## Demo page
-http://localhost:8085/page/demo
+http://localhost:8085/spring-starter/page/demo
